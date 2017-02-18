@@ -1,0 +1,1 @@
+C:\Users\PC\Documents\git\wpftest\WpfTest\bin\Debug\WpfTest.exe.config
