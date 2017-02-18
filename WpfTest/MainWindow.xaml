@@ -5,8 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfTest"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="500" Width="700" Loaded="Window_Loaded">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="103*"/>
+            <ColumnDefinition Width="70*"/>
+        </Grid.ColumnDefinitions>
         <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="120"/>
         <Label x:Name="label" Content="ID" HorizontalAlignment="Left" Margin="10,39,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label1" Content="名前" HorizontalAlignment="Left" Margin="10,67,0,0" VerticalAlignment="Top"/>
@@ -14,6 +18,24 @@
         <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="69,41,0,0" TextWrapping="Wrap" Text="{Binding Id}" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="69,72,0,0" TextWrapping="Wrap" Text="{Binding Name}" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="23" Margin="69,100,0,0" TextWrapping="Wrap" Text="{Binding Address}" VerticalAlignment="Top" Width="120"/>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="216,25,0,209" Width="267" Grid.ColumnSpan="2" SelectionChanged="dataGrid_SelectionChanged" ItemsSource="{Binding DataContext, Mode=TwoWay, RelativeSource={RelativeSource Self}}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Index}" Header="INDEX" MinWidth="50" />
+                <DataGridTextColumn Binding="{Binding Value}" Header="VALUE" MinWidth="150" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <ListView x:Name="listView" HorizontalAlignment="Left" Height="236" Margin="97.916,25,0,0" VerticalAlignment="Top" Width="143" Grid.Column="1">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Label x:Name="label3" Content="INDEX" HorizontalAlignment="Left" Margin="216,280,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbIndex" HorizontalAlignment="Left" Height="23" Margin="269,285,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="{Binding Index}"/>
+        <Label x:Name="label4" Content="VALUE" HorizontalAlignment="Left" Margin="394,280,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="tbValue" HorizontalAlignment="Left" Height="23" Margin="35.916,285,0,0" TextWrapping="Wrap" Text="{Binding Value}" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <Button x:Name="btnAdd" Content="追加" HorizontalAlignment="Left" Margin="165.916,282,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1" Click="btnAdd_Click"/>
 
     </Grid>
 </Window>
