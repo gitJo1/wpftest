@@ -1,1 +1,14 @@
 C:\Users\PC\Documents\git\wpftest\WpfTest\bin\Debug\WpfTest.exe.config
+C:\Users\PC\Documents\git\wpftest\WpfTest\bin\Debug\WpfTest.exe
+C:\Users\PC\Documents\git\wpftest\WpfTest\bin\Debug\WpfTest.pdb
+C:\Users\PC\Documents\git\wpftest\WpfTest\obj\Debug\WpfTest.csprojResolveAssemblyReference.cache
+C:\Users\PC\Documents\git\wpftest\WpfTest\obj\Debug\MainWindow.g.cs
+C:\Users\PC\Documents\git\wpftest\WpfTest\obj\Debug\App.g.cs
+C:\Users\PC\Documents\git\wpftest\WpfTest\obj\Debug\WpfTest_MarkupCompile.cache
+C:\Users\PC\Documents\git\wpftest\WpfTest\obj\Debug\WpfTest_MarkupCompile.lref
+C:\Users\PC\Documents\git\wpftest\WpfTest\obj\Debug\MainWindow.baml
+C:\Users\PC\Documents\git\wpftest\WpfTest\obj\Debug\WpfTest.g.resources
+C:\Users\PC\Documents\git\wpftest\WpfTest\obj\Debug\WpfTest.Properties.Resources.resources
+C:\Users\PC\Documents\git\wpftest\WpfTest\obj\Debug\WpfTest.csproj.GenerateResource.Cache
+C:\Users\PC\Documents\git\wpftest\WpfTest\obj\Debug\WpfTest.exe
+C:\Users\PC\Documents\git\wpftest\WpfTest\obj\Debug\WpfTest.pdb

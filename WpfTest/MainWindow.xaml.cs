@@ -23,6 +23,14 @@ namespace WpfTest
         public MainWindow()
         {
             InitializeComponent();
+
+            var member = new Member
+            {
+                Id = "1000",
+                Name = "fuku518",
+                Address = "大阪府"
+            };
+            DataContext = member;
         }
     }
 }
